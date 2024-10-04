@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #8f3c3c;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,8 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin flex-center {
+@mixin flex($align: center, $justify: center) {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: $align;
+  justify-content: $justify;
 };
