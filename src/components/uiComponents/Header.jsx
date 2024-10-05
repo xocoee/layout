@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./Header.scss";
 
-import linkedinLogo from "../assets/socialLink/linkedin.svg";
-import githubLogo from "../assets/socialLink/github.svg";
-import telegramLogo from "../assets/socialLink/telegram.svg";
+import linkedinLogo from "/socialLink/linkedin.svg";
+import githubLogo from "/socialLink/github.svg";
+import telegramLogo from "/socialLink/telegram.svg";
 
 const Header = () => {
   const [showLinks, setShowLinks] = useState(false);
