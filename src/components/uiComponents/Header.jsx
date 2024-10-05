@@ -35,7 +35,6 @@ const Header = () => {
               >
                 <img src={linkedinLogo} alt="Linkedin logo" />
               </a>
-
               <a
                 href="https://github.com/xocoee"
                 className="social-link-logo"
@@ -44,7 +43,6 @@ const Header = () => {
               >
                 <img src={githubLogo} alt="Github logo" />
               </a>
-
               <a
                 href="https://t.me/xocoee"
                 className="social-link-logo"
