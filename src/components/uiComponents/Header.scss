@@ -19,7 +19,7 @@
   @include flex();
   height: 30px;
   width: 80px;
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: "Permanent Marker", sans-serif;
   color: black;
   font-size: 20px;
   cursor: pointer;
@@ -58,15 +58,19 @@
 }
 
 .social-link-logo {
-    height: 100%;
-    background-color: #fd89d6;
+  height: 100%;
+  background-color: #fd89d6;
 }
 
 .social-link-logo img {
-    height: 100%;
-    transition: transform 0.3s ease;
+  height: 100%;
+  transition: transform 0.3s ease;
 }
 
 .social-link-logo img:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
+
+.social-link-logo img:active {
+  transform: scale(0.95);
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Header.scss";
 
+import ThemeButton from "./button/ThemeButton";
+
 import linkedinLogo from "/socialLink/linkedin.svg";
 import githubLogo from "/socialLink/github.svg";
 import telegramLogo from "/socialLink/telegram.svg";
@@ -54,6 +56,7 @@ const Header = () => {
             </div>
           </div>
           <div className="header-logo">xocoee</div>
+         <ThemeButton />
         </div>
       </div>
     </>
