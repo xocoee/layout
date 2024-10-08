@@ -55,7 +55,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className="header-logo">xocoee</div>
          <ThemeButton />
         </div>
       </div>

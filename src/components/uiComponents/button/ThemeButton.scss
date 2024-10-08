@@ -1,14 +1,15 @@
 @import "../../../main.scss";
 
 .theme-button {
+  @include flex();
+  width: 60px;
   position: relative;
   font-family: 'Permanent Marker', sans-serif;
   font-size: 15px;
   color: black;
-  // background-color: blue;
   cursor: pointer;
   position: relative;
-
+  background-color: red;
   &::after {
     content: "";
     position: absolute;
@@ -21,23 +22,20 @@
     transform-origin: center;
     transition: transform 0.3s ease;
   }
-
   &:hover::after {
     transform: translateX(-50%) scaleX(1);
   }
-
   .switch-theme {
     @include flex(start, center);
     height: 100%;
     position: absolute;
-    left: 100%;
+    right: 100%;
     gap: 10px;
     opacity: 0;
     transform: translateX(sans-serif);
     transition: opacity 1.5s ease;
     visibility: hidden;
     background-color: #fd89d6;
-
     &.visible {
       opacity: 1;
       visibility: visible;

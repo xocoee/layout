@@ -3,26 +3,31 @@ import "./ThemeButton.scss";
 
 const ThemeButton = () => {
   const [showToggle, setShowToggle] = useState(false);
-
+  console.log("showToggle", showToggle);
   const handleMouseEnter = () => {
-    setShowLinks(true);
+    setShowToggle(true);
   };
 
   const handleMouseLeave = () => {
-    setShowLinks(false);
+    setShowToggle(false);
   };
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  // };
 
   return (
     <>
-      <div className="theme-button">
+      <div
+        className="theme-button"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         Theme
-      </div>
-      <div className={`switch-theme ${showLinks ? "visible" : ""}`}>
-         <div>Dark</div>
-         <div>Light</div>
+        <div className={`switch-theme ${showToggle ? "visible" : ""}`}>
+          <div className="">Dark</div>
+          <div>Light</div>
+          <div>System</div>
+        </div>
       </div>
     </>
   );
