@@ -32,7 +32,7 @@ function App() {
         Click on the Vite and React logos to learn more and more no and yes
       </p>
       <div>test branch</div>
-      <div>test2 branch</div>
+      <div>test2 branch and change setting</div>
     </div>
   );
 }
