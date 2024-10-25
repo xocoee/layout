@@ -27,6 +27,7 @@ const ThemeButton = () => {
           <div className="">Dark</div>
           <div>Light</div>
           <div>System</div>
+          <div>yes</div>
         </div>
       </div>
     </>
